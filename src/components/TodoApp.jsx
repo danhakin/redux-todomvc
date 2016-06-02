@@ -2,7 +2,7 @@ import React from 'react';
 import TodoList from './TodoList';
 import {connect} from 'react-redux';
 
-export class TodoApp extends React.Component {
+class TodoApp extends React.Component {
 
 	render() {
 		return (
@@ -23,4 +23,5 @@ function mapStateToProps(state){
 	}
 }
 
+export default TodoApp
 export const TodoAppContainer = connect(mapStateToProps)(TodoApp)
