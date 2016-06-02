@@ -15,9 +15,9 @@ store.dispatch({
 	type: 'SET_STATE',
 	state: {
 		todos: [
-			{id: 1, text: 'React', status: 'active'},
-			{id: 2, text: 'Redux', status: 'active'},
-			{id: 3, text: 'Immutable', status: 'completed'}		
+			{id: 1, text: 'React', status: 'active', editing: false},
+			{id: 2, text: 'Redux', status: 'active', editing: false},
+			{id: 3, text: 'Immutable', status: 'completed', editing: false}		
 		],
 		filter: 'all'
 	}

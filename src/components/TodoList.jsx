@@ -31,7 +31,9 @@ class TodoList extends React.Component {
 								  id={item.get('id')}
 								  text={item.get('text')}
 								  isCompleted={this.isCompleted(item)} 
-								  isEditing={item.get('editing')} 
+								  isEditing={item.get('editing')}
+								  doneEditing={this.props.doneEditing}
+								  cancelEditing={this.props.cancelEditing}
 								  toggleComplete={this.props.toggleComplete}
 								  deleteItem={this.props.deleteItem}
 								  editItem={this.props.editItem}/>
